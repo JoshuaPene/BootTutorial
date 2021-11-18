@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.content{
+  padding-top: 140px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1088px;
+  margin: 0 auto;
+  align-items: baseline;
+  padding: 12px 0;
+  color: #666;
+  max-width: 100%;
+}
+
+.foot-list {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 70px;
+  display: inline-flex;
+}
+
+.foot-list li {
+  list-style: none;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.foot-list a{
+  text-decoration: none;
+  color: rgba(255,255,255,.55);
+}
+
+h1{
+  font-family: 'Lato';
+  color: #0d3941;
+  font-size: 2.4rem;
+  line-height: 2.0rem;
+  font-style: none;
+  font-weight: 700;
+}
+
+h2{
+  font-family: 'Lato';
+  color: #0d3941;
+  font-size: 2.0rem;
+  line-height: 1.7rem;
+  font-style: none;
+  font-weight: 900;
+}
+
+h3{
+  font-family: 'Lato';
+  color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  font-style: none;
+  font-weight: 700;
+}
+
+h4{
+  font-family: 'Lato';
+  color: #404040;
+  font-size: 1.2rem;
+  line-height: 1.0rem;
+  font-style: none;
+  font-weight: 500;
+}
+
+h6{
+  font-family: 'Lato';
+  color: #rgb(232, 76, 64);
+  font-size: 0.8rem;
+  line-height: 1.0rem;
+  font-style: none;
+  font-weight: 900;
+}
+
+.navbar-brand h1{
+  padding-left: 70px;
+  color: white;
+}
