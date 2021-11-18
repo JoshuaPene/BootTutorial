@@ -82,3 +82,11 @@ h6{
   padding-left: 70px;
   color: white;
 }
+
+.options li{
+  list-style: none;
+}
+
+.options li p{
+  padding-left: 5%;
+}

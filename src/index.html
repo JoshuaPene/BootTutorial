@@ -87,11 +87,189 @@
             First off, I am going to go over some of Bootstrap’s Navigation classes.  (First you will need to create a header and nav class.)
             Bootstrap classes all have specific names that will perform their specific styles. In the Nav class that is set up, I have implemented
             many specific classes which I will show down below. First off, I will declare that the nav class is a “navbar”. This will let bootstrap apply
-            some base code  to the navbar that I want set up. Next I will show many different classes and what each one does! 
-          </p>
+            some base code  to the navbar that I want set up. Next I will show many different classes and what each one does!
+          </p><br></br>
+          <p>Adding any of these styles to the class will change the styling of the navigation bar. Feel free to try a bunch of these
+            and figure out what each one does and how each one can work with each other!</p>
+            <ul class="options">
+              <li>
+                <h5>fixed-top:</h5>
+                <p>This will do exactly what it says! It will make the Nav-bar stick to the top of the screen. </p>
+              </li>
+              <li>
+                <h5>navbar-expand-sm (xs, md, lg, xl):</h5>
+                <p>This will make sure that the navigation bar will expand due to the size of the screen that is being used.
+                  These are called responsive breakpoints. They will create breakpoints for the layouts and interfaces depending on the viewports scale.</p>
+              </li>
+              <li>
+                <h5>navbar-dark (navbar-light, ):</h5>
+                <p>This will change the color them and style that you are using for the bar</p>
+              </li>
+              <li>
+                <h5>bg-dark (bg-light): </h5>
+                <p>This will change the background color used for the nav bar.</p>
+              </li>
+              <li>
+                <h5>justify-content-between: </h5>
+                <p>You can also add stylings like "justify content" among other things!</p>
+              </li>
+              <li>
+                <h5>collapse navbar-collapse:</h5>
+                <p>A component which wraps the remain components of the navbar. </p>
+              </li>
+            </ul>
       </div>
     </div>
 
+
+    <div class="container content">
+      <h1>Href Classes</h1>
+        <div class="content-text">
+          <p>
+            Now, one of the most exciting parts of Bootstrap is its ability to implement grid structures for you! In order to apply these
+            grids, you have to put all of your elements into a div class named “container”. This is the first step for getting grids into
+            your code. Bootstrap uses a 12-column, flexbox grid system to help the user  implement tons of their classes.
+          </p>
+            <ul class="options">
+              <li>
+                <h5>container</h5>
+                <p>Will create a simple grid structure for you to begin working with through a column. </p>
+              </li>
+              <li>
+                <h5>container-fluid</h5>
+                <p>WIll have a container span the width of the viewport.</p>
+              </li>
+              <li>
+                <h5>row</h5>
+                <p>Rows are wrappers for columns.</p>
+              </li>
+              <li>
+                <h5>column </h5>
+                <p>column classes indicate the number of columns you would like to have in a row out of a
+                  possible 12 per row. You will put column classes inside of row classes to make however
+                  many columns span the row. A column class will be typed as “col”.</p>
+                  <p>Bootstrap will automatically default the column settings to be equal-width. That will make your content in a row be spaced evenly.</p>
+                  <p>In order to define how many columns you want to stretch out over a certain class, you will add a number to the end of a col. (Ez. “col-4”).</p>
+                  <p>You have to make sure the numbers that you use throughout a row’s columns are equal to 12!</p>
+                  <p>You can also add a “-auto” to the end of a col to make the spacing even out for you so you don’t have to worry about how it looks at certain viewports as much.</p>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Alignment</h1>
+        <div class="content-text">
+          <p>
+            There are many familiar ways that you can align your rows just by adding Bootstrap’s premade classes.
+            Many examples of alignment are some that we have used before, so I will just give examples of many that could be utilized.
+          </p>
+            <ul class="options">
+              <li>
+                <h5>Examples</h5>
+                <p>align-items-start, align-items-center, align-items-end, justify-content-start, justify-content-center, justify-content-end, justify-content-around, justify-content-between, align-self-start, align-self-center, align-self-end</p>
+                <h5>Order</h5>
+                <p> You can apply order to your columns by adding an order class to your code: order-1, order-2, etc. (up to 12)</p>
+
+              </li>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Cards</h1>
+        <div class="content-text">
+          <p>
+            To present my grid content, I chose to apply a simple “card-deck” to my classes to display my information
+            in a really neat way. Cards are flexible and extensible content containers. They are built with “as little
+            markup and styles as possible” so you have a lot of room to implement your own customization. I will show
+            some types of content types that Bootstrap offers:
+          </p>
+            <ul class="options">
+              <li>
+                <h5>card-body</h5>
+                <p>The building block of a card. Basically just a body tag, but inside a card.</p>
+              </li>
+              <li>
+                <h5>card-title</h5>
+                <p>A title inside your card. Likely applied to some kind of h4, h5, etc.</p>
+              </li>
+              <li>
+                <h5>card-subtitle</h5>
+                <p>Subtitle under the main title.</p>
+              </li>
+              <li>
+                <h5>card-text</h5>
+                <p>Applied to a p-class for your text to be affected.</p>
+              </li>
+              <li>
+                <h5>card-link</h5>
+                <p>Used to be applied to a href. </p>
+              </li>
+              <li>
+                <h5>card-img-top</h5>
+                <p> This places an image to the top of the card. With
+                  .card-text, text can be added to the card. Text within
+                  .card-text can also be styled with the standard HTML tags.</p>
+              </li>
+
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Buttons</h1>
+        <div class="content-text">
+          <p>
+            Bootstrap offers some really cool button classes that are easily applied to your buttons. They offer some
+            quick colors and styles that you can use, and they are also easily editable. Here are a few examples of classes:
+            (replace the _____ with the style you want from the list below! I really liked and used “info” for my project)
+          </p>
+            <ul class="options">
+              <li>
+                <h5>btn btn-__________</h5>
+                <h5>btn btn-outline-________</h5>
+                <h5>Bg-____ (changes the background color of an element for example)</h5>
+                <p>Bootstrap has some preset colors and styles with specefic names.
+                  A few of the names are as follows: primary, secondary, success, danger, warning, info, light, dark, link</p>
+
+              </li>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Extras</h1>
+        <div class="content-text">
+          <p>
+            A few other class elements I have implemented in my code from bootstrap are as follows:
+          </p>
+            <ul class="options">
+              <li>
+                <h5>rounded</h5>
+                <p>This will round the corners of whatever element it is applied to</p>
+                <h5>float-left float-right</h5>
+                <p>These options will float whatever you want</p>
+                <h5>foot</h5>
+                <p>Foot is a class that you add to the footer to get some basic layouts applied to your footer</p>
+                <h5>foot-list</h5>
+                <p>this is what you would apply to a list used in the footer</p>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <p>
+        There is so much more that bootstrap offers that makes a coder's life easier.
+        I would really encourage anyone to look into using it in their code!
+      </p>
+    </div>
 
 
     <footer>
