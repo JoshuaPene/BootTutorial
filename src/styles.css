@@ -10,6 +10,10 @@
   padding-top: 140px;
 }
 
+.content h1{
+  padding-bottom: 25px;
+}
+
 
 .col-sm{
   background-color: #f5f3f3;
@@ -89,6 +93,7 @@ h6{
   line-height: 1.0rem;
   font-style: none;
   font-weight: 900;
+  padding-top: 20px;
 }
 
 .navbar-brand h1{
