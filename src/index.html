@@ -5,9 +5,9 @@
 
     <title>Bootstrap Tutorial</title>
 
-    <link href="styles.css" type="text/css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> !-->
+    <link href="styles.css" type="text/css" rel="stylesheet" />
 
   </head>
   <body>
@@ -31,7 +31,7 @@
             devices first and scales up web components through CSS. By offering pre-set classes, you can cut out a ton of CSS styling! Bootstrap
             has made a ton of preset-classes and their website is full of information on how to implement their code. While you can definitely check it out,
             I am going to teach you how to create a simple website that implements Bootstrap’s column layouts with some fun css layouts
-            (don’t worry, it’s super easy to learn how to use!)
+            (don’t worry, it’s super easy to learn how to use)!
           </p>
         </div>
     </div>
@@ -40,13 +40,13 @@
       <h1>Considerations</h1>
         <div class="content-text">
           <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p><br></br>
-              <h6>&lt;!doctype html>
-              &lt;html lang="en">
-                ...
+              <h6>&lt;!doctype html><br></br>
+              &lt;html lang="en"><br></br>
+                ...<br></br>
               &lt;/html>
               </h6>
               <br></br>
-              <p>To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your head. </p>
+              <p>To ensure proper rendering and zooming for all devices, add the responsive viewport meta tag to your head. </p>
                 <br></br>
               <h6>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
               </h6>
@@ -62,8 +62,8 @@
             I am going to link bootstrap into the &lt;link> in the &lt;head> before any other stylesheets. Bootstrap offers this code on their website,
             which I highly recommend checking out, but I will provide the code I used to link this:<br></br>
 
-            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+            <h6>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></h6>
+            <br></br> or visit <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">here</a> to download it yourself.
 
           </p>
       </div>
@@ -87,11 +87,274 @@
             First off, I am going to go over some of Bootstrap’s Navigation classes.  (First you will need to create a header and nav class.)
             Bootstrap classes all have specific names that will perform their specific styles. In the Nav class that is set up, I have implemented
             many specific classes which I will show down below. First off, I will declare that the nav class is a “navbar”. This will let bootstrap apply
-            some base code  to the navbar that I want set up. Next I will show many different classes and what each one does! 
-          </p>
+            some base code  to the navbar that I want set up. Next I will show many different classes and what each one does!
+          </p><br></br>
+          <p>Adding any of these styles to the class will change the styling of the navigation bar. Feel free to try a bunch of these
+            and figure out what each one does and how each one can work with each other!</p>
+            <ul class="options">
+              <li>
+                <h5>fixed-top:</h5>
+                <p>This will do exactly what it says! It will make the Nav-bar stick to the top of the screen (the navbar on this website is an example of this).</p>
+              </li>
+              <li>
+                <h5>navbar-expand-sm (or xs, md, lg, xl):</h5>
+                <p>This will make sure that the navigation bar will expand due to the size of the screen that is being used.
+                  These are called responsive breakpoints. They will create breakpoints for the layouts and interfaces depending on the viewports scale. If you scale this website, you will see how the
+                navbar reacts to the size restraints.</p>
+              </li>
+              <li>
+                <h5>navbar-dark (navbar-light, etc.):</h5>
+                <p>This will change the color and style that you are using for the bar.</p>
+              </li>
+              <li>
+                <h5>bg-dark (bg-light): </h5>
+                <p>This will change the background color used for the nav bar.</p>
+              </li>
+              <li>
+                <h5>justify-content-between: </h5>
+                <p>You can also add stylings like "justify content" among other things!</p>
+              </li>
+              <li>
+                <h5>collapse navbar-collapse:</h5>
+                <p>A component which wraps the remain components of the navbar such as links to other pages on the websites.  </p>
+              </li>
+            </ul>
       </div>
     </div>
 
+
+    <div class="container content">
+      <h1>Href Classes</h1>
+        <div class="content-text">
+          <p>
+            Now, one of the most exciting parts of Bootstrap is its ability to implement grid structures for you! Bootstrap uses containers,
+             rows, and columns to layout and align content by using flexbox. In order to apply these grids, you have to put all of your elements into a div
+             class named “container”. This is the first step for getting grids into your code. Bootstrap uses a 12-column,
+             flexbox grid system to help the user implement tons of their classes.
+          </p>
+            <ul class="options">
+              <li>
+                <h5>container</h5>
+                <p>Will create a simple grid structure for you to begin working with through a column. </p>
+              </li>
+              <li>
+                <h5>container-fluid</h5>
+                <p>WIll have a container span the width of the viewport.</p>
+              </li>
+              <li>
+                <h5>row</h5>
+                <p>Rows are wrappers for columns.</p>
+              </li>
+              <li>
+                <h5>column </h5>
+                <p>column classes indicate the number of columns you would like to have in a row out of a
+                  possible 12 per row. You will put column classes inside of row classes to make however
+                  many columns span the row. A column class will be typed as “col”.</p>
+                  <p>Bootstrap will automatically default the column settings to be equal-width. That will make your content in a row be spaced evenly.</p>
+                  <p>In order to define how many columns you want to stretch out over a certain class, you will add a number to the end of a col. (Ex. “col-4”).</p>
+                  <p>You have to make sure the numbers that you use throughout a row’s columns are equal to 12!</p>
+                  <p>You can also add a “-auto” to the end of a col to make the spacing even out for you so you don’t have to worry about how it looks at certain viewports as much.</p>
+                  <br></br>
+                  <h5>Example and code:</h5>
+                  This is an example of what these classes can do together and the code which made them.
+                  <br></br>
+                  <div class="container">
+                            <div class="row">
+                              <div class="col-sm col-4 border">
+                                Column 1
+                              </div>
+                              <div class="col-sm col-4 border">
+                                Column 2
+                              </div>
+                              <div class="col-sm col-4 border">
+                                Column 3
+                              </div>
+                            </div>
+                          </div>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 70px;">
+                  <h1>Pactice!</h1>
+                  <p> Try it yourself! I have provided the very base code to demonstrate what columns can look like! Feel free to
+                  add in anything you want to try! Just remember, the column numbers have to add up to 12! (Also, ignore the head!
+                  It should just link all the bootstrap so you don't have to!)</p>
+                  <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="ExvMYdd" data-editable="true" data-user="joshuapene" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/joshuapene/pen/ExvMYdd">
+              Simple Columns</a> by Joshua Pene (<a href="https://codepen.io/joshuapene">@joshuapene</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+
+    <div class="container content">
+      <h1>Alignment</h1>
+        <div class="content-text">
+          <p>
+            There are many familiar ways that you can align your rows just by adding Bootstrap’s premade classes.
+            Many examples of alignment are some that we have used before, so I will just give examples of many that could be utilized.
+          </p>
+            <ul class="options">
+              <li>
+                <h5>Examples</h5>
+                <p>align-items-start, align-items-center, align-items-end, justify-content-start, justify-content-center, justify-content-end, justify-content-around, justify-content-between, align-self-start, align-self-center, align-self-end</p>
+                <h5>Order</h5>
+                <p> You can apply order to your columns by adding an order class to your code: order-1, order-2, etc. (up to 12)</p>
+
+              </li>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Cards</h1>
+        <div class="content-text">
+          <p>
+            To present my grid content, I chose to apply a simple “card-deck” to my classes to display my information
+            in a really neat way. Cards are flexible and extensible content containers. They are built with “as little
+            markup and styles as possible” so you have a lot of room to implement your own customization. I will show
+            some types of content types that Bootstrap offers:
+          </p>
+            <ul class="options">
+              <li>
+                <h5>card-body</h5>
+                <p>The building block of a card. Basically just a body tag, but inside a card.</p>
+              </li>
+              <li>
+                <h5>card-title</h5>
+                <p>A title inside your card. Likely applied to some kind of h4, h5, etc.</p>
+              </li>
+              <li>
+                <h5>card-subtitle</h5>
+                <p>Subtitle under the main title.</p>
+              </li>
+              <li>
+                <h5>card-text</h5>
+                <p>Applied to a p-class for your text to be affected.</p>
+              </li>
+              <li>
+                <h5>card-link</h5>
+                <p>Used to be applied to a href. </p>
+              </li>
+              <li>
+                <h5>card-img-top</h5>
+                <p> This places an image to the top of the card. With
+                  .card-text, text can be added to the card. Text within
+                  .card-text can also be styled with the standard HTML tags.</p>
+              </li>
+              <br></br>
+              <h5>Example and code:</h5>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="card-deck col-md-4 d-flex justify-content-center">
+                              <div class="card text-left" style="width: 18rem;">
+                                <img class="card-img-top" src="images/serve.png" alt="Serving">
+                                  <div class="card-body">
+                                    <h3 class="card-title">Serving</h3>
+                                    <p class="card-text">Choose between beginner, intermediate, and expert exercises!</p>
+                                    <a href="#" class="btn btn-outline-info">Learn now!</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <h6><p>&lt;div class="container justify-content-center"></p>
+                                    <p>&lt;div class="row"></p>
+                                      <p>&lt;div class="card-deck col-md-4 d-flex justify-content-center"></p>
+                                        <p>&lt;div class="card text-left" style="width: 18rem;"></p>
+                                          <p>&lt;img class="card-img-top" src="images/serve.png" alt="Serving"></p>
+                                            <p>&lt;div class="card-body"></p>
+                                              <p>&lt;h3 class="card-title">Serving&lt;/h3></p>
+                                              <p>&lt;p class="card-text">Choose between beginner, intermediate, and expert exercises!&lt/p>
+                                              <p>&lt;a href="#" class="btn btn-outline-info">Learn now!&lt;/a></p>
+                                            <p>&lt;/div></p>
+                                          <p>&lt;/div></p>
+                                        <p>&lt;/div></p>
+                                      <p>&lt;/div></p></h6>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Buttons</h1>
+        <div class="content-text">
+          <p>
+            Bootstrap offers some really cool button classes that are easily applied to your buttons. They offer some
+            quick colors and styles that you can use, and they are also easily editable. Here are a few examples of classes:
+            (replace the _____ with the style you want from the list below! I really liked and used “info” for my project)
+          </p>
+            <ul class="options">
+              <li>
+                <h5>btn btn-__________</h5>
+                <h5>btn btn-outline-________</h5>
+                <h5>Bg-____ (changes the background color of an element for example)</h5>
+                <p>Bootstrap has some preset colors and styles with specefic names.
+                  A few of the names are as follows: primary, secondary, success, danger, warning, info, light, dark, link</p>
+                  <a href="#" class="btn btn-outline-info">Learn now!</a>
+                  <h6><p class="btn-text">&lt;a href="#" class="btn btn-outline-info">Learn now!&lt;/a></p></h6>
+                  <a href="#" class="btn btn-secondary">Learn now!</a>
+                  <h6><p class="btn-text">&lt;a href="#" class="btn btn-secondary">Learn now!&lt;/a></p></h6>
+
+              </li>
+            </ul>
+      </div>
+    </div>
+
+
+    <div class="container content">
+      <h1>Extras</h1>
+        <div class="content-text">
+          <p>
+            A few other class elements I have implemented in my code from bootstrap are as follows:
+          </p>
+            <ul class="options">
+              <li>
+                <h5>rounded</h5>
+                <p>This will round the corners of whatever element it is applied to.</p>
+                <h5>float-left float-right</h5>
+                <p>These options will float whatever you want.</p>
+                <h5>foot</h5>
+                <p>Foot is a class that you add to the footer to get some basic layouts applied to your footer.</p>
+                <h5>foot-list</h5>
+                <p>this is what you would apply to a list used in the footer (you can find these footer examples in my footer down below).</p>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="container content">
+                  <h1>Pactice!</h1>
+                  <p> Try it yourself! Anywhere there is a "#" you should be able to put in code that I have shown you.
+                    (It looks like a mess right now, so I would recommend you <b>start with the img class!</b>) Have fun!</p>
+                    <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="zYdbOBp" data-editable="true" data-user="joshuapene" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/joshuapene/pen/zYdbOBp">
+                        Card Example</a> by Joshua Pene (<a href="https://codepen.io/joshuapene">@joshuapene</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+
+    <div class="container content">
+      <p>
+        There is so much more that bootstrap offers that makes a coder's life easier.
+        I would really encourage anyone to look into using it in their code!
+      </p>
+
+    </div>
 
 
     <footer>
